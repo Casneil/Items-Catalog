@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Account</h1>
+{% for users in user %}
+<p>{{ users.name  +"'s" }}</p>	
+<p>{{ users.picture }}		
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for item in items %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		    <h2><a class="article-title">{{ item.name }}</a></h2>
+		    <p class="article-content">{{  item.description }}</p>
+		    <p class="article-content">{{ item.price }}</p>
+		    {% if 'username' in session %}		
+		    <a class="btn btn-secondary btn-sm mt-2 mb-2 " href="{{ url_for ('editedItem', item_id=item.id, mall_id=item.id ) }}">Update</a>
+		    <a class="btn btn-danger btn-sm mt-2 mb-2" href="{{ url_for('deleteItem', item_id=item.id, mall_id=item.id) }}">Delete</a> 
+		    {% endif %}
+		  </div>
+		</article>
+	{% endfor %}
+{% endblock content %}

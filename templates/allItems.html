@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for item in items %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		   {#
+		      <a class="mr-2" href="#">{{ item.name }}</a>
+		      <small class="text-muted">{{ item.date_added }}</small>
+		    </div>   #}
+		    <h2><a class="article-title" href="{{ url_for('catalog', mall_id=mall_id) }} ">{{ item.dapartment }}</a></h2>
+		    <p class="article-content">{{  item.description }}</p>
+		    <p class="article-content">{{ item.price }}</p>
+		  </div>
+		</article>
+	{% endfor %}
+{% endblock content %}

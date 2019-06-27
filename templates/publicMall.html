@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for shop in shops %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		     <h1><a class="a" href="{{ url_for( 'showItems', mall_id=shop.id)}} ">{{ shop.department }}</a></h1>
+		    </div>
+		    <p class="article-content">{{ shop.description }}</p>
+		    <p class="article-content">{{ shop.price }}</p>
+		  </div>
+		</article>
+	{% endfor %}
+{% endblock content %}
+
+
+
+
+

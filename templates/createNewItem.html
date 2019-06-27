@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="content-section">
+		 <form method="POST" action="#">
+		 	<fieldset class="form-group">
+		 		<legend class="border-bottom mb-5">New Item</legend>
+		 		<p>Name:</p>
+		 		<input type ="text" maxlength="50" class="form-control" name='name'>
+		 		<br>
+		 		<p>Description:</p>
+		 		<textarea class="form-control" maxlength="250" rows="3" name= 'description'></textarea>
+		 		<br>
+		 		<p>Price:</p>
+		 		<input type = 'text' size='12' rows="3" name = 'price' placeholder = '{{newItem.price}}'>
+		 		<button type="submit" class="btn btn-secondary btn-sm mt-2 mb-2" id="submit" type="submit">
+		 		<span class="" aria-hidden="true"></span>Submit</button>	
+		 		<a class="btn btn-danger btn-sm mt-2 mb-2 " href="{{ url_for ('showItems', mall_id=mall_id ) }}">Cancel</a>
+		 	</fieldset>	
+		 	<div class="form-group">
+		 </form>
+	</div>
+	<div class="border-top pt-3">
+	</div>
+{% endblock content %}
+
+ 

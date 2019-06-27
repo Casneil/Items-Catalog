@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+	{% for shop in shops %}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		     <h1><a class="mr-4" href="{{ url_for( 'showItems', mall_id=shop.id)}} ">{{ shop.department }}</a></h1>   
+		    </div>
+		    <p class="article-content">{{ shop.description }}</p>
+		     {% if 'username' in session %}	
+		    <a class="btn btn-primary btn-sm mt-2 mb-2 " href="{{ url_for('newItem', mall_id=shop.id) }}">Add Item</a>
+		    <a class="btn btn-secondary btn-sm mt-2 mb-2 " href="{{url_for('editedMall', mall_id=shop.id)}}">Edit</a>
+		    <a class="btn btn-danger btn-sm mt-2 mb-2 " href="{{url_for('deleteMall', mall_id=shop.id)}}">Delete</a>
+		    {% endif %}  
+		  </div>
+		</article>
+	{% endfor %}
+{% endblock content %}
+
+
+
