@@ -5,9 +5,9 @@ Item-Catalog Project for Udacity's FullStack Nanodegree
 This application provides a list of items within a variety of categories as well as provide a user authentication system. Login users will have the ability to post, edit, and delete their own items.
 
 # Features
-1 Full CRUD support using SQLAlchemy and Flask.
-2 JSON endpoints.
-3 Implements oAuth using Google Sign-in API.
+- Full CRUD support using SQLAlchemy and Flask.
+- JSON endpoints.
+- Implements oAuth using Google Sign-in API.
 
 # To run this project:
 
@@ -23,40 +23,32 @@ This application provides a list of items within a variety of categories as well
 
 >vagrant up
 
+6 This will cause Vagrant to download the Ubuntu operating system and install it. This may process may take quite a while depending on your Internet speed.
 
-This will cause Vagrant to download the Ubuntu operating system and install it. This may process may take quite a while depending on your Internet speed.
-
-
-After the the installation completes, connect to the newly created VM by typing in yout terminal:
+7 After the the installation completes, connect to the newly created VM by typing in yout terminal:
 
 >vagrant ssh
 
-
-To the shared repository type:
+8 To the shared repository type:
 
 >cd/vagrant/
 
+9 Download or clone this repository, and navigate to it.
 
-Download or clone this repository, and navigate to it.
-
-Install or upgrade Flask:
+10 Install or upgrade Flask:
 
 >sudo python3 -m pip install --upgrade flask
 
-
-Set up the database:
+11 Set up the database:
 
 >python3 catalog_setup.py
 
-
-This step is optional, you can add Shops, Items via your browser when the programm is already running.
+12 This step is optional, you can add Shops, Items via your browser when the programm is already running.
 
 >python3 catalog_add.py
 
-
-Run this application:
+13 Run this application:
 
 >python3 application.py
 
-
-In your favourite Web browser open (http://localhost:5000), and enjoy :+1:.
+14 In your favourite Web browser open (http://localhost:5000), and enjoy :+1:.
