@@ -21,23 +21,23 @@ This application provides a list of items within a variety of categories as well
 
 5. Open your terminal in the same directory as you vagrant file
 
->vagrant up
+                     >vagrant up
 
 6. This will cause Vagrant to download the Ubuntu operating system and install it. This may process may take quite a while depending on your Internet speed.
 
 7. After the the installation completes, connect to the newly created VM by typing in yout terminal:
 
->vagrant ssh
+                     >vagrant ssh
 
 8. To the shared repository type:
 
->cd/vagrant/
+        >cd/vagrant/
 
 9. Download or clone this repository, and navigate to it.
 
 10. Install or upgrade Flask:
 
->sudo python3 -m pip install --upgrade flask
+        >sudo python3 -m pip install --upgrade flask
 
 11. Set up the database:
 
