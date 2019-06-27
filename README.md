@@ -21,14 +21,17 @@ This application provides a list of items within a variety of categories as well
 
 5 Open your terminal in the same directory as you vagrant file
 
-vagrant up
-This will cause Vagrant to download the Ubuntu operating system and install it. This may take quite a while depending on how fast your Internet connection is.
+>vagrant up
 
-After the above command succeeds, connect to the newly created VM by typing in yout terminal:
+This will cause Vagrant to download the Ubuntu operating system and install it. This may process may take quite a while depending on your Internet speed.
+
+After the the installation completes, connect to the newly created VM by typing in yout terminal:
 
 >vagrant ssh
 
-Type cd </vagrant/ to navigate to the shared repository.
+To the shared repository type:
+
+>cd/vagrant/
 
 Download or clone this repository, and navigate to it.
 
