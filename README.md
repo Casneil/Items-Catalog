@@ -51,4 +51,4 @@ This application provides a list of items within a variety of categories as well
 
           python3 application.py
 
-14. In your favourite Web browser open (http://localhost:5000), and enjoy :+1:.
+14. In your favourite Web browser open: http://localhost:5000, and enjoy :+1:.
