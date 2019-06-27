@@ -23,28 +23,40 @@ This application provides a list of items within a variety of categories as well
 
 >vagrant up
 
+
 This will cause Vagrant to download the Ubuntu operating system and install it. This may process may take quite a while depending on your Internet speed.
+
 
 After the the installation completes, connect to the newly created VM by typing in yout terminal:
 
 >vagrant ssh
 
+
 To the shared repository type:
 
 >cd/vagrant/
+
 
 Download or clone this repository, and navigate to it.
 
 Install or upgrade Flask:
 
-sudo python3 -m pip install --upgrade flask
+>sudo python3 -m pip install --upgrade flask
+
+
 Set up the database:
 
-python3 database_setup.py
-Insert dummy values. If you don't run this, the application might not run.
+>python3 catalog_setup.py
 
-python3 fake_db_populator.py
+
+This step is optional, you can add Shops, Items via your browser when the programm is already running.
+
+>python3 catalog_add.py
+
+
 Run this application:
 
-python3 app.py
-Open http://localhost:5000/ in your favourite Web browser, and enjoy.
+>python3 application.py
+
+
+In your favourite Web browser open (http://localhost:5000), and enjoy :EMOJICODE: :+1:.
