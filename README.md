@@ -59,4 +59,4 @@ Run this application:
 >python3 application.py
 
 
-In your favourite Web browser open (http://localhost:5000), and enjoy :EMOJICODE: :+1:.
+In your favourite Web browser open (http://localhost:5000), and enjoy :+1:.
