@@ -27,28 +27,28 @@ This application provides a list of items within a variety of categories as well
 
 7. After the the installation completes, connect to the newly created VM by typing in yout terminal:
 
-         vagrant ssh
+          vagrant ssh
 
 8. To the shared repository type:
 
-        cd/vagrant/
+          cd/vagrant/
 
 9. Download or clone this repository, and navigate to it.
 
 10. Install or upgrade Flask:
 
-        sudo python3 -m pip install --upgrade flask
+          sudo python3 -m pip install --upgrade flask
 
 11. Set up the database:
 
-        python3 catalog_setup.py
+          python3 catalog_setup.py
 
 12. This step is optional, you can add Shops, Items via your browser when the programm is already running.
 
->python3 catalog_add.py
+          python3 catalog_add.py
 
 13. Run this application:
 
-        python3 application.py
+          python3 application.py
 
 14. In your favourite Web browser open (http://localhost:5000), and enjoy :+1:.
