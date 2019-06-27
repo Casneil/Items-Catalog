@@ -144,7 +144,7 @@ def gconnect():
     return output
 
 
-# Creating a User  Maybe need to delete #
+# Creating a User #
 def newUser(login_session):
     newUser = User(name=login_session['username'], email=login_session[
         'email'], picture=login_session['picture'])
