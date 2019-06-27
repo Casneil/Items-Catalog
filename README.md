@@ -33,7 +33,7 @@ This application provides a list of items within a variety of categories as well
 
           cd/vagrant/
 
-9. Download or clone this repository, and navigate to it.
+9. Download or clone [this](https://github.com/Casneil/Items-Catalog) repository, and navigate to it.
 
 10. Install or upgrade Flask:
 
